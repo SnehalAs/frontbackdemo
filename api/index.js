@@ -69,3 +69,17 @@
 // app.listen(PORT, () => {
 //   console.log(`✅ Server running on http://localhost:${PORT}`);
 // });
+
+
+const express = require('express');
+const serverless = require('serverless-http');
+const app = express();
+
+app.use(express.json());
+
+app.post('/send-otp', (req, res) => {
+  // Your send OTP logic
+  res.send('OTP sent!');
+});
+
+module.exports.handler = serverless(app);
