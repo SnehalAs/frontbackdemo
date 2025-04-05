@@ -44,7 +44,7 @@ export default function Login() {
 </h2>
 
 
-      <div className="relative bg-gray-600 bg-opacity-90 p-8 rounded-xl shadow-xl text-left w-106 h-180">
+      <div className="relative bg-gray-600 bg-opacity-90 p-8 rounded-xl shadow-xl text-left w-120 h-180">
         <h1 className="text-3xl font-bold text-white text-center mb-4">Login</h1>
 
         <label className="block text-gray-300 text-lg mb-4 mt-8">Enter Email:</label>
@@ -69,5 +69,5 @@ export default function Login() {
         </div>
       </div>
     </div>
-  );
+  ); 
 }

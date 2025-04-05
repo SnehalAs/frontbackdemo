@@ -42,7 +42,7 @@ export default function Verify() {
 </h2>
 
       
-      <div className="relative bg-gray-600 bg-opacity-90 p-8 rounded-xl shadow-xl text-left w-96 z-10">
+      <div className="relative bg-gray-600 bg-opacity-90 p-8 rounded-xl shadow-xl text-left w-120 h-180 z-10">
         <h1 className="text-3xl font-bold text-center text-white mb-4">Otp Verification</h1>
 
         <label className="block text-gray-300 text-lg mb-2 mt-16">Enter OTP:</label>
@@ -59,12 +59,12 @@ export default function Verify() {
         <div className="mt-70 flex justify-center">
           <button
             onClick={handleVerify}
-            className="mt-4 bg-gray-200 text-black font-bold px-6 py-3 rounded-lg shadow-lg transition hover:bg-gray-300"
+            className="mt-4 bg-gray-200 text-black font-bold px-16 py-4 rounded-lg shadow-lg transition hover:bg-gray-300"
           >
             Login
           </button>
         </div>
       </div>
-    </div>
+    </div> 
   );
 }
