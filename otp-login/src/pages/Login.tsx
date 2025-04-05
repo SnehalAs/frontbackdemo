@@ -17,7 +17,8 @@ export default function Login() {
     }
 
     try {
-      await axios.post("http://localhost:5000/send-otp", { email });
+      // await axios.post("http://localhost:5000/send-otp", { email });
+      await axios.post("/api/send-otp", { email });
       localStorage.setItem("email", email);
       setMessage("✔ OTP Sent Successfully");
       setMessageColor("text-green-500");

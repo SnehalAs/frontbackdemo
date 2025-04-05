@@ -17,7 +17,8 @@ export default function Verify() {
     }
 
     try {
-      await axios.post('http://localhost:5000/verify-otp', { email, otp });
+      // await axios.post('http://localhost:5000/verify-otp', { email, otp });
+      await axios.post("/api/verify-otp", { email, otp }); 
       setMessage('✔ Verification Successful');
       setMessageColor('text-green-500');
       setTimeout(() => navigate('/success'), 1500); 
